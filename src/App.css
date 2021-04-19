@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.searchBox {
+    text-align: center;
+    padding: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btnPortion {
+    text-align: center;
+    /* margin: 30px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btnPortion button {
+    width: 80px;
+    margin-left: 20px;
+    padding: 10px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #706f6f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchBox input {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border: 1px solid #706f6f;
+    border-radius: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.displayAsGrid {
+    border: 1px solid #27aedb;
+    /* display: grid;
+  grid-template-columns: repeat(2,1fr); */
+    width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grids {
+    border: 1px solid coral;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.grids_title {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 20px 5px;
+}
+
+.grids_auther {
+    margin: 10px auto;
+    text-transform: capitalize;
+    line-height: 16px;
+}
+
+.displayAsList {
+    border: 1px solid #27aedb;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.lists {
+    border: 1px solid coral;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+.list_title {
+    font-size: 30px;
+    width: 60%;
+    margin: 20px auto;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.list_auther {
+    /* font-size: 20px; */
+    width: 60%;
+    margin: 10px auto;
+    text-transform: capitalize;
+    line-height: 16px;
+    /* font-weight: 600; */
+}
+
+.darkMode {
+    background-color: #222;
+    color: azure;
+}
+
+.lightMode {
+    background-color: azure;
+    color: #222;
+}
+
+@media screen and (max-width:600) {
+    .displayAsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
