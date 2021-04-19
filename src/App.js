@@ -8,14 +8,14 @@ function App() {
   const [searchItem, setSearchItem] = useState("");
   const [isList , setIsList] = useState(true);
   const [gridlistbtnText, setgridlistbtnText] = useState("Grid");
-  const [lightDarkMode,setLightDarkMode] =useState("Dark");
-  const [lightDarkModeClass,setLightDarkModeClass] =useState("lightMode");
+  const [lightDarkMode,setLightDark] =useState("Dark");
+  const [lightDarkClass,setLightDarkClass] =useState("lightMode");
 
   
   return (
-    <div id="main" className={lightDarkModeClass}>
+    <div id="main" className={lightDarkClass}>
 
-      <div className="searchBox">
+      <div className="searchinput">
         <input type="text"  placeholder="Search.." onChange={(e)=>{
           setSearchItem(e.target.value)
         }} />
@@ -36,12 +36,12 @@ function App() {
 
         <button onClick={ (e)=>{
           if(lightDarkMode==="Dark"){
-            setLightDarkMode("Light");
-            setLightDarkModeClass("darkMode");
+            setLightDark("Light");
+            setLightDarkClass("darkMode");
           }
           else{
-            setLightDarkMode("Dark");
-            setLightDarkModeClass("lightMode");
+            setLightDark("Dark");
+            setLightDarkClass("lightMode");
           }
         } } >{lightDarkMode}</button>
 

@@ -1,35 +1,5 @@
-.searchBox {
-    text-align: center;
-    padding: 40px;
-}
-
-.btnPortion {
-    text-align: center;
-    /* margin: 30px; */
-}
-
-.btnPortion button {
-    width: 80px;
-    margin-left: 20px;
-    padding: 10px;
-    outline: none;
-    border-radius: 30px;
-    border: 1px solid #706f6f;
-}
-
-.searchBox input {
-    width: 300px;
-    padding: 15px;
-    border: none;
-    outline: none;
-    border: 1px solid #706f6f;
-    border-radius: 30px;
-}
-
 .displayAsGrid {
-    border: 1px solid #27aedb;
-    /* display: grid;
-  grid-template-columns: repeat(2,1fr); */
+    border: 1px solid #a8aeb1;
     width: 1200px;
     margin: 20px auto;
     display: grid;
@@ -37,7 +7,7 @@
 }
 
 .grids {
-    border: 1px solid coral;
+    border: 1px solid rgb(99, 94, 92);
     margin: 20px;
     text-align: center;
     padding: 10px;
@@ -57,13 +27,13 @@
 }
 
 .displayAsList {
-    border: 1px solid #27aedb;
+    border: 1px solid #5f6466;
     width: 500px;
     margin: 20px auto;
 }
 
 .lists {
-    border: 1px solid coral;
+    border: 1px solid rgb(107, 105, 105);
     margin: 20px;
     padding: 10px;
     display: flex;
@@ -78,21 +48,19 @@
 }
 
 .list_auther {
-    /* font-size: 20px; */
     width: 60%;
     margin: 10px auto;
     text-transform: capitalize;
     line-height: 16px;
-    /* font-weight: 600; */
 }
 
 .darkMode {
     background-color: #222;
-    color: azure;
+    color: white;
 }
 
 .lightMode {
-    background-color: azure;
+    background-color: white;
     color: #222;
 }
 
@@ -101,4 +69,31 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.searchinput {
+    text-align: center;
+    padding: 40px;
+}
+
+.btnPortion {
+    text-align: center;
+}
+
+.btnPortion button {
+    width: 80px;
+    margin-left: 20px;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #b16969;
+}
+
+.searchBox input {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border: 1px solid #9c6969;
+    border-radius: 20px;
 }
